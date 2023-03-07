@@ -105,7 +105,7 @@ export const productAdmin = expressAsyncHandler(async (req, res) => {
 });
 
 export const searchProduct = expressAsyncHandler(async (req, res) => {
-  const { query } = req;
+  const { query } = req.target.value;
   const pageSize = query.pageSize || PAGE_SIZE;
   const page = query.page || 1;
   const category = query.category || '';

@@ -21,11 +21,13 @@ main {
   color: #000000;
 }
 
-.products {
+.products,.table , .mb-3{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
 
 .rating span {
   color: #ffc000;
