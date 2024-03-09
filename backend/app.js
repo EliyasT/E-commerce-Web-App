@@ -9,12 +9,10 @@ import orderRouter from './routes/orderRoutes.js';
 import uploadRouter from './routes/uploadRoutes.js';
 
 dotenv.config();
-//password = UoYYX4PuAb32TNhd
-//mongodb+srv://admin:<password>@cluster0.pfeqpo8.mongodb.net/?retryWrites=true&w=majority
 
 mongoose
   .connect(
-    'mongodb+srv://admin:UoYYX4PuAb32TNhd@cluster0.pfeqpo8.mongodb.net/Awash?retryWrites=true&w=majority'
+    'mongodb+srv://admin:<password>@cluster0.pfeqpo8.mongodb.net/?retryWrites=true&w=majority'
   )
   .then(() => {
     console.log('connected to db');
